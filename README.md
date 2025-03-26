@@ -39,24 +39,24 @@ _Below is an example of how you can instruct your audience on installing and set
 
 
 1. Clone the repo
-   ```sh
+```sh
    git clone https://github.com/KyleTrant/BT1.git
-   ```
+```
    
 2. Install NPM packages
-    ```sh
+```sh
   npm init -y
-    ```
+```
 
 3. Install Tailwind CSS and dependencies
-    ```sh
+```sh
 npm install -D tailwindcss postcss autoprefixer
-    ```
+```
     
 4. Build Tailwind CSS
-    ```sh
+```sh
 npm run dev
-    ```
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
