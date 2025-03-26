@@ -25,9 +25,6 @@
   }
 }
 @layer utilities {
-  .text-shadow {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  }
   .placeholder-box {
     @apply bg-gray-200 dark:bg-gray-600 flex items-center justify-center text-gray-400 dark:text-gray-300;
   }
