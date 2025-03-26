@@ -5,8 +5,7 @@
     "tailwindcss": "^4.0.15"
   },
   "scripts": {
-    "dev":"npx @tailwindcss/cli -i ./style.css -o ./dist/style.css -c  --watch",
-    "build":"npx @tailwindcss/cli -i ./style.css -o ./dist/style.css -c --minify"
-
+    "dev":"npx @tailwindcss/cli -i ./style.css -o ./dist/style.css -c ./tailwind.config.js --watch",
+    "build": "mkdir -p dist && npx @tailwindcss/cli -i ./style.css -o ./dist/style.css -c ./tailwind.config.js --minify"
   }
 }
