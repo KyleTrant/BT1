@@ -47,10 +47,12 @@ _Below is an example of how you can instruct your audience on installing and set
     ```sh
   npm init -y
     ```
+
 3. Install Tailwind CSS and dependencies
     ```sh
 npm install -D tailwindcss postcss autoprefixer
     ```
+    
 4. Build Tailwind CSS
     ```sh
 npm run dev
