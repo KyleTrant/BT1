@@ -56,3 +56,8 @@ npm run dev
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com 
+
+[Tailwind.com]: https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white
+[Tailwind-url]: https://tailwindcss.com
