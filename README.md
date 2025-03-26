@@ -31,7 +31,7 @@ Ensure you have Node.js and npm installed. If not, install the latest version:
 
 ```sh
 npm install npm@latest -g
-
+```
 
 ### Installation
 
