@@ -1,52 +1,88 @@
 <!DOCTYPE html>
-<html lang="vi">
-
+<html lang="vi" class="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang Web Cơ Bản</title>
-    <link rel="stylesheet" href="dist/style.css">   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Citizen | Donate Clothes</title>
+  <meta name="description" content="Donate old clothes to help those in need around the world. Join us in spreading kindness.">  
+  <meta name="keywords" content="clothing donation, charity, donate clothes, humanitarian aid, used clothes donation">  
+  <meta name="author" content="World Citizen Organization">
+ <link href="./dist/style.css" rel="stylesheet">  
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script src="./src/js.js"></script>
 </head>
-
-<body>
-
-    <!-- Phần Header -->
-    <header>
-        <nav>
-            <ul>
-                <li class="bg-white text-sm"><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Phần Main Content -->
-    <main>
-        <!-- Phần section 1 -->
-        <section>
-            <h1 class="bg-red-500" >Chào mừng đến với website của chúng tôi!</h1>
-            <p>Đây là một ví dụ về trang web HTML5.</p>
-        </section>
-
-        <!-- Phần section 2 -->
-        <section>
-            <h2>Dịch vụ của chúng tôi</h2>
-            <ul>
-                <li>Thiết kế web</li>
-                <li>Phát triển phần mềm</li>
-                <li>Tư vấn công nghệ</li>
-                <li>Tư vấn công nghệ</li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- Phần Footer -->
-    <footer>
-        <p>&copy; 2025 Công ty ABC. Tất cả quyền được bảo lưu.</p>
-    </footer>
-
+<body class="bg-gray-50 transition-colors duration-200 min-h-screen flex flex-col dark:bg-gray-800 dark:border-gray-700">
+  <header class="bg-white border-b-2 border-black">
+    <nav class="dark:bg-gray-900 dark:border-gray-700" >
+      <div class="container  flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="/src/images/logo-adidas-vector-inkythuatso-01-28-13-33-57.jpg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">WORLD CITIZEN</span>
+        </a>
+        <button data-collapse-toggle="navbar-multi-level" type="button" class="mobile-menu-btn">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+          <ul class="nav-menu">
+            <li>
+              <a href="#" class="nav-link text-blue-500" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+  </header>
+  <main class="flex-grow px-4 sm:px-6 py-12 relative dark:bg-gray-800">
+    <button id="theme-toggle" class="absolute top-4 right-4 z-50 p-2 rounded-full bg-white/80 dark:bg-gray-700/80 backdrop-blur shadow-md">
+      <svg id="theme-icon" class="w-5 h-5 text-gray-800 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path id="theme-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+      </svg>
+    </button>
+    <section class="container mx-auto  flex flex-col sm:flex-row items-center text-left mb-16">
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+          Improve lives by donating your old clothes <span class="text-yellow-400">😊</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mb-10">
+          Donation is one of the best ways to create impact in society. We help connect people who are in need with others who can help with the necessary supplies.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <a href="#" class="px-8 py-3 font-medium dark:text-white rounded-lg transition duration-200 shadow-lg flex items-center justify-center dark:hover:bg-blue-800 dark:bg-gray-700 bg-blue-600">
+            Donate
+          </a>
+          <a href="#" class="px-8 py-3 dark:bg-gray-700 text-gray-800 dark:text-white font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-600 transition duration-200 border border-gray-200 dark:border-gray-600 shadow-lg flex items-center justify-center gap-2">
+            <svg class="w-5 h-5  text-gray-700 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+            </svg>
+            Learn More
+          </a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
+        <div class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg aspect-square placeholder-box flex justify-center items-center overflow-hidden">
+          <img src="/src/images/images.jpeg" alt="image girl" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="py-8 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-gray-600 dark:text-gray-300">
+        © 2023 World Citizen. All rights reserved.
+      </p>
+    </div>
+  </footer>
 </body>
-
 </html>
