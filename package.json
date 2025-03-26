@@ -6,6 +6,6 @@
   },
   "scripts": {
     "dev":"npx @tailwindcss/cli -i ./style.css -o ./dist/style.css -c ./tailwind.config.js --watch",
-    "build": "mkdir -p dist && npx @tailwindcss/cli -i ./style.css -o ./dist/style.css -c ./tailwind.config.js --minify"
+    "build": "npx @tailwindcss/cli -i ./style.css -o ./dist/style.css -c ./tailwind.config.js --minify"
   }
 }
